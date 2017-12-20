@@ -1,0 +1,16 @@
+{
+  "pizzas": [
+    { "id": 0, "title": "bacon", "info": "tasty pizza tasty pizza tasty pizza tasty pizza tasty pizza", "img": "https://dominospizza.ru/media/8793/productosg-пепе-2.jpeg"},
+    { "id": 1, "title": "cheese", "info": "tasty pizza tasty pizza tasty pizza tasty pizza tasty pizza", "img": "https://dominospizza.ru/media/8793/productosg-пепе-2.jpeg"},
+    { "id": 2, "title": "fish", "info": "tasty pizza tasty pizza tasty pizza tasty pizza tasty pizza", "img": "https://dominospizza.ru/media/8793/productosg-пепе-2.jpeg"},
+    { "id": 3, "title": "chicken", "info": "tasty pizza tasty pizza tasty pizza tasty pizza tasty pizza", "img": "https://dominospizza.ru/media/8793/productosg-пепе-2.jpeg"},
+    { "id": 4, "title": "bacon cheese", "info": "tasty pizza tasty pizza tasty pizza tasty pizza tasty pizza", "img": "https://dominospizza.ru/media/8793/productosg-пепе-2.jpeg"},
+    { "id": 5, "title": "sea pizza", "info": "tasty pizza tasty pizza tasty pizza tasty pizza tasty pizza", "img": "https://dominospizza.ru/media/8793/productosg-пепе-2.jpeg"}
+  ],
+  "news": [
+    { "id": 0, "title": "new pizza", "info": "new pizza with bacon tomato and cheese new pizza with bacon tomato and cheese" },
+    { "id": 1, "title": "chip pizza", "info": "new prices for pizza , very chip new prices for pizza , very chip" },
+    { "id": 2, "title": "new prices", "info": "new prices for pizza , very chip new prices for pizza , very chip" },
+    { "id": 3, "title": "new pizza", "info": "new pizza with bacon tomato and cheese new pizza with bacon tomato and cheese new pizza with bacon tomato and cheese" }
+  ]
+}

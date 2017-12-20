@@ -1,0 +1,18 @@
+.news-wrap {
+  text-align: center;
+}
+
+.news-item h2 {
+  font-size: 32px;
+  color: #689df2;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.news-item p {
+  font-size: 18px;
+  color: #3c5884;
+}
+
+
+
+

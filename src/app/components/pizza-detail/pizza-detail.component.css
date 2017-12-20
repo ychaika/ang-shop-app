@@ -1,0 +1,25 @@
+.detail-pizza {
+  display: flex;
+  justify-content: center
+}
+
+.pizza-image {
+  margin-right: 20px;
+  height: 300px;
+}
+
+.pizza-image img {
+  max-height: 100%;
+}
+
+.pizza-name {
+  font-size: 26px;
+  color: #689df2;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.pizza-text {
+  font-size: 18px;
+  color: #3c5884;
+}

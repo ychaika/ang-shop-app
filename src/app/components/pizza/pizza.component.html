@@ -1,0 +1,9 @@
+<div class="product-wrap">
+  <a *ngFor="let pizza of pizzas" routerLink="/pizza/{{pizza.id}}" class="catalog-item">
+    <div class="item-image">
+      <img src={{pizza.img}} alt={{pizza.title}}>
+    </div>
+    <div class="item-name">{{pizza.title}}</div>
+    <div class="item-info">{{pizza.info}}</div>
+  </a>
+</div>

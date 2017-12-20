@@ -1,0 +1,6 @@
+<div class="news-wrap">
+  <a *ngFor="let itemNews of news" routerLink="/news/{{itemNews.id}}" class="news-item">
+    <h2>{{itemNews.title}}</h2>
+    <p>{{itemNews.info}}</p>
+  </a>
+</div>

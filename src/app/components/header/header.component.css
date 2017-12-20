@@ -1,0 +1,38 @@
+.header  {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  padding: 10px 20px;
+  margin: 0 auto 20px;
+  align-items: center;
+  background: #dce5f7;
+}
+
+.logo {
+  height: 100px;
+  display: inline-block;
+}
+
+.logo img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav__item {
+  font-size: 20px;
+  background: #fff;
+  padding: 4px 9px;
+  text-decoration: none;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+
+

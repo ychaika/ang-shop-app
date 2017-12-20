@@ -1,0 +1,18 @@
+.catalog-wrap  {
+  background: #e1e4ea;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-section {
+  width: 26%;
+}
+
+.news-section .news-wrap {
+  display: block;
+}
+
+.catalog {
+  width: 70%;
+}
