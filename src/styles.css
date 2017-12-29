@@ -45,3 +45,10 @@ table {
 * {
   box-sizing: border-box;
 }
+
+
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

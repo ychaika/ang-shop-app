@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from '../../services/data-service/data.service';
+import {Pizza} from '../../interfaces/pizza';
 
 @Component({
   selector: 'app-pizza-detail',
@@ -8,16 +9,23 @@ import { DataService } from '../../services/data-service/data.service';
   styleUrls: ['./pizza-detail.component.css']
 })
 export class PizzaDetailComponent implements OnInit {
-  currentPizza: any;
+  pizzas: Pizza[];
+  currentPizza: {};
 
   constructor(private dataService: DataService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params.subscribe((params) => {
-      this.dataService.getPizzas().then((pizzas) => {
-        this.currentPizza = pizzas.find((pizza) => pizza.id === +params.id);
-      });
+      if (this.pizzas === undefined) {
+        this.dataService.getPizzasFromServer().then((pizzas) => {
+          this.pizzas = pizzas;
+          this.currentPizza = pizzas.find((pizza) => pizza.id === +params.id);
+        });
+      } else {
+        this.currentPizza = this.pizzas.find((pizza) => {
+          return pizza.id === +params.id;
+        });
+      }
     });
   }
-
 }

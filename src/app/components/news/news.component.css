@@ -1,9 +1,3 @@
-.news-wrap {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 .news-item {
   display: block;
   max-width: 300px;
@@ -16,6 +10,7 @@
 
 .news-item  {
   color: #000;
+  cursor: pointer;
 }
 
 .news-item h2 {

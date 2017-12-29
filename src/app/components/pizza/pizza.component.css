@@ -1,9 +1,3 @@
-.product-wrap {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 .catalog-item {
   width: 28%;
   margin-bottom: 20px;
