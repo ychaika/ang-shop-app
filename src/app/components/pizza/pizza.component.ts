@@ -13,11 +13,9 @@ export class PizzaComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    if (this.pizzas === undefined) {
-      this.dataService.getPizzasFromServer().then((pizzas) => {
-        this.pizzas = pizzas;
-      });
-    }
+    this.dataService.getPizzas().then((pizzas) => {
+      this.pizzas = pizzas;
+    });
   }
 }
 

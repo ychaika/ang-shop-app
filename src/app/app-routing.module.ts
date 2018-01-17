@@ -5,6 +5,7 @@ import { PizzaDetailComponent } from './components/pizza-detail/pizza-detail.com
 import { NewsDetailComponent } from './components/news-detail/news-detail.component';
 import { PizzaComponent } from './components/pizza/pizza.component';
 import { NewsComponent } from './components/news/news.component';
+import { FormsComponent } from './components/forms/forms.component';
 
 export const appRoutes: Routes = [
   {
@@ -26,6 +27,14 @@ export const appRoutes: Routes = [
   {
     path: 'pizza/:id',
     component: PizzaDetailComponent
+  },
+  {
+    path: 'forms',
+    component: FormsComponent
+  },
+  {
+    path: '**',
+    component: CatalogComponent
   }
 ];
 

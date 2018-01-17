@@ -8,11 +8,24 @@ const URLNEWS = 'http://localhost:3000/news/';
 
 @Injectable()
 export class DataService {
+  pizzaList: Pizza[];
 
   constructor(public http: HttpClient) { }
 
-  getPizzasFromServer(): Promise<Pizza[]> {
-    return this.http.get<Pizza[]>(URLPIZZA).toPromise();
+  getPizzas(): Promise<Pizza[]> {
+    if (this.pizzaList === undefined) {
+      this.http.get<Pizza[]>(URLPIZZA).toPromise().then((pizzas) => {
+        this.pizzaList = pizzas;
+      });
+      return this.http.get<Pizza[]>(URLPIZZA).toPromise();
+    } else {
+      console.log('well done');
+      return new Promise(resolve => {
+        resolve(this.pizzaList);
+      });
+
+    }
+
   }
 
   getNews(): Promise<News[]> {

@@ -10,22 +10,16 @@ import {Pizza} from '../../interfaces/pizza';
 })
 export class PizzaDetailComponent implements OnInit {
   pizzas: Pizza[];
-  currentPizza: {};
+  currentPizza: Pizza;
 
   constructor(private dataService: DataService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params.subscribe((params) => {
-      if (this.pizzas === undefined) {
-        this.dataService.getPizzasFromServer().then((pizzas) => {
-          this.pizzas = pizzas;
-          this.currentPizza = pizzas.find((pizza) => pizza.id === +params.id);
-        });
-      } else {
-        this.currentPizza = this.pizzas.find((pizza) => {
-          return pizza.id === +params.id;
-        });
-      }
+      this.dataService.getPizzas().then((pizzas) => {
+        this.pizzas = pizzas;
+        this.currentPizza = pizzas.find((pizza) => pizza.id === +params.id);
+      });
     });
   }
 }
