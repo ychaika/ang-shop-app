@@ -1,0 +1,22 @@
+<!--<div class="form-group">-->
+  <!--<button class="btn btn-primary">Click me</button>-->
+<!--</div>-->
+
+<!--<div class="form-group">-->
+  <!--<input type="text" (keyup)="keyUp($event)" class="input-lg">-->
+  <!--<label class="control-label">{{value}}</label>-->
+<!--</div>-->
+
+<!--<div class="form-group">-->
+  <!--<p>Привет {{name}}</p>-->
+
+  <!--<input type="text" [(ngModel)]="name" class="input-lg" />-->
+  <!--<input type="text" [(ngModel)]="name" class="input-lg" />-->
+<!--</div>-->
+
+<div class="form-group">
+  <app-forms-child [chNumber]="myNumber"></app-forms-child>
+  <input type="number" (keyup)="setNumber($event)">
+</div>
+
+

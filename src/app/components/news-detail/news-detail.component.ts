@@ -15,11 +15,6 @@ export class NewsDetailComponent implements OnInit {
   constructor(private dataService: DataService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    // this.route.params.subscribe((params) => {
-    //   this.dataService.getNews().then((news) => {
-    //     this.currentNews = news.find(itemNews => itemNews.id === +params.id);
-    //   });
-    // });
     this.route.params.subscribe((params) => {
       this.dataService.getNewsItemById(+params.id).then((newsItem) => {
         this.currentNews = newsItem;
