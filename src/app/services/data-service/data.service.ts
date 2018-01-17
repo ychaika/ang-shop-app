@@ -19,7 +19,6 @@ export class DataService {
       });
       return this.http.get<Pizza[]>(URLPIZZA).toPromise();
     } else {
-      console.log('well done');
       return new Promise(resolve => {
         resolve(this.pizzaList);
       });
